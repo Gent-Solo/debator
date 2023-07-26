@@ -6,26 +6,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>AdminLTE 3 | Gallery</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/all.min.css>
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/ekko-lightbox.css>
   <!-- Theme style -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/adminlte.min.css>
 </head>
-<!--
-`body` tag options:
-
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
@@ -203,8 +194,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -225,7 +216,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link active">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -233,7 +224,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href=<?php echo FILE_COMPONENTS_PATH ?>/widgets.php class="nav-link">
+            <a href="widgets.php class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
@@ -252,49 +243,49 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/top-nav.php class="nav-link">
+                <a href="layout/top-nav.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/top-nav-sidebar.php class="nav-link">
+                <a href="layout/top-nav-sidebar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation + Sidebar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/boxed.php class="nav-link">
+                <a href="layout/boxed.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Boxed</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/fixed-sidebar.php class="nav-link">
+                <a href="layout/fixed-sidebar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Sidebar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/fixed-sidebar-custom.php class="nav-link">
+                <a href="layout/fixed-sidebar-custom.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Sidebar <small>+ Custom Area</small></p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/fixed-topnav.php class="nav-link">
+                <a href="layout/fixed-topnav.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Navbar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/fixed-footer.php class="nav-link">
+                <a href="layout/fixed-footer.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fixed Footer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/collapsed-sidebar.php class="nav-link">
+                <a href="layout/collapsed-sidebar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Collapsed Sidebar</p>
                 </a>
@@ -311,25 +302,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/chartjs.php class="nav-link">
+                <a href="charts/chartjs.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ChartJS</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/flot.php class="nav-link">
+                <a href="charts/flot.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Flot</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/inline.php class="nav-link">
+                <a href="charts/inline.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/uplot.php class="nav-link">
+                <a href="charts/uplot.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>uPlot</p>
                 </a>
@@ -346,49 +337,49 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link">
+                <a href="UI/general.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/icons.php class="nav-link">
+                <a href="UI/icons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Icons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/buttons.php class="nav-link">
+                <a href="UI/buttons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buttons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/sliders.php class="nav-link">
+                <a href="UI/sliders.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sliders</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/modals.php class="nav-link">
+                <a href="UI/modals.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Modals & Alerts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/navbar.php class="nav-link">
+                <a href="UI/navbar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Navbar & Tabs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/timeline.php class="nav-link">
+                <a href="UI/timeline.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Timeline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/ribbons.php class="nav-link">
+                <a href="UI/ribbons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ribbons</p>
                 </a>
@@ -405,25 +396,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link">
+                <a href="forms/general.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General Elements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/advanced.php class="nav-link">
+                <a href="forms/advanced.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Advanced Elements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/editors.php class="nav-link">
+                <a href="forms/editors.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Editors</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/validation.php class="nav-link">
+                <a href="forms/validation.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Validation</p>
                 </a>
@@ -440,19 +431,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/simple.php class="nav-link">
+                <a href="tables/simple.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Tables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/data.php class="nav-link">
+                <a href="tables/data.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>DataTables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/jsgrid.php class="nav-link">
+                <a href="tables/jsgrid.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
@@ -461,8 +452,8 @@
           </li>
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
-            <a href=<?php echo FILE_COMPONENTS_PATH ?>/calendar.php class="nav-link">
-              <i class="nav-icon fas fa-calendar-alt"></i>
+            <a href="calendar.php class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Calendar
                 <span class="badge badge-info right">2</span>
@@ -470,7 +461,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href=<?php echo FILE_COMPONENTS_PATH ?>/gallery.php class="nav-link">
+            <a href="gallery.php class="nav-link active">
               <i class="nav-icon far fa-image"></i>
               <p>
                 Gallery
@@ -478,7 +469,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href=<?php echo FILE_COMPONENTS_PATH ?>/kanban.php class="nav-link">
+            <a href="kanban.php class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Kanban Board
@@ -495,19 +486,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/mailbox.php class="nav-link">
+                <a href="mailbox/mailbox.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/compose.php class="nav-link">
+                <a href="mailbox/compose.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/read-mail.php class="nav-link">
+                <a href="mailbox/read-mail.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
                 </a>
@@ -524,61 +515,61 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/invoice.php class="nav-link">
+                <a href="examples/invoice.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Invoice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/profile.php class="nav-link">
+                <a href="examples/profile.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Profile</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/e-commerce.php class="nav-link">
+                <a href="examples/e-commerce.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>E-commerce</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/projects.php class="nav-link">
+                <a href="examples/projects.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Projects</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/project-add.php class="nav-link">
+                <a href="examples/project-add.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Add</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/project-edit.php class="nav-link">
+                <a href="examples/project-edit.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Edit</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/project-detail.php class="nav-link">
+                <a href="examples/project-detail.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Detail</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/contacts.php class="nav-link">
+                <a href="examples/contacts.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contacts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/faq.php class="nav-link">
+                <a href="examples/faq.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>FAQ</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/contact-us.php class="nav-link">
+                <a href="examples/contact-us.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contact us</p>
                 </a>
@@ -604,25 +595,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/login.php class="nav-link">
+                    <a href="examples/login.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Login v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/register.php class="nav-link">
+                    <a href="examples/register.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Register v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/forgot-password.php class="nav-link">
+                    <a href="examples/forgot-password.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Forgot Password v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/recover-password.php class="nav-link">
+                    <a href="examples/recover-password.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Recover Password v1</p>
                     </a>
@@ -639,25 +630,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/login-v2.php class="nav-link">
+                    <a href="examples/login-v2.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Login v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/register-v2.php class="nav-link">
+                    <a href="examples/register-v2.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Register v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/forgot-password-v2.php class="nav-link">
+                    <a href="examples/forgot-password-v2.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Forgot Password v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href=<?php echo FILE_COMPONENTS_PATH ?>/recover-password-v2.php class="nav-link">
+                    <a href="examples/recover-password-v2.php class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Recover Password v2</p>
                     </a>
@@ -665,43 +656,43 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/lockscreen.php class="nav-link">
+                <a href="examples/lockscreen.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lockscreen</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/legacy-user-menu.php class="nav-link">
+                <a href="examples/legacy-user-menu.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Legacy User Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/language-menu.php class="nav-link">
+                <a href="examples/language-menu.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Language Menu</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/404.php class="nav-link">
+                <a href="examples/404.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 404</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/500.php class="nav-link">
+                <a href="examples/500.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 500</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/pace.php class="nav-link">
+                <a href="examples/pace.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pace</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/blank.php class="nav-link">
+                <a href="examples/blank.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Blank Page</p>
                 </a>
@@ -724,13 +715,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/simple.php class="nav-link">
+                <a href="search/simple.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Search</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/enhanced.php class="nav-link">
+                <a href="search/enhanced.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Enhanced</p>
                 </a>
@@ -844,307 +835,243 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
-          </div><!-- /.col -->
+            <h1>Gallery</h1>
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
+              <li class="breadcrumb-item active">Gallery</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+    </section>
 
     <!-- Main content -->
-    <div class="content">
+    <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Online Store Visitors</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
+          <div class="col-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title">FilterizR Gallery with Ekko Lightbox</h4>
               </div>
               <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">820</span>
-                    <span>Visitors Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 12.5%
-                    </span>
-                    <span class="text-muted">Since last week</span>
-                  </p>
+                <div>
+                  <div class="btn-group w-100 mb-2">
+                    <a class="btn btn-info active" href="javascript:void(0)" data-filter="all"> All items </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="1"> Category 1 (WHITE) </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="2"> Category 2 (BLACK) </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="3"> Category 3 (COLORED) </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="4"> Category 4 (COLORED, BLACK) </a>
+                  </div>
+                  <div class="mb-2">
+                    <a class="btn btn-secondary" href="javascript:void(0)" data-shuffle> Shuffle items </a>
+                    <div class="float-right">
+                      <select class="custom-select" style="width: auto;" data-sortOrder>
+                        <option value="index"> Sort by Position </option>
+                        <option value="sortData"> Sort by Custom Data </option>
+                      </select>
+                      <div class="btn-group">
+                        <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Ascending </a>
+                        <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Descending </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This Week
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last Week
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Products</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body table-responsive p-0">
-                <table class="table table-striped table-valign-middle">
-                  <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
-                    </td>
-                    <td>$13 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        12%
-                      </small>
-                      12,000 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
+                <div>
+                  <div class="filter-container p-0 row">
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                      <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="lightbox" data-title="sample 1 - white">
+                        <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="white sample"/>
                       </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
-                    </td>
-                    <td>$29 USD</td>
-                    <td>
-                      <small class="text-warning mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        0.5%
-                      </small>
-                      123,234 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+                      <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black">
+                        <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="black sample"/>
                       </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
-                    </td>
-                    <td>$1,230 USD</td>
-                    <td>
-                      <small class="text-danger mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        3%
-                      </small>
-                      198 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
+                      <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red">
+                        <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="red sample"/>
                       </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
-                    </td>
-                    <td>$199 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        63%
-                      </small>
-                      87 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
+                      <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="lightbox" data-title="sample 4 - red">
+                        <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="red sample"/>
                       </a>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales</h3>
-                  <a href="javascript:void(0);">View Report</a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+                      <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black">
+                        <img src="https://via.placeholder.com/300/000000?text=5" class="img-fluid mb-2" alt="black sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                      <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white">
+                        <img src="https://via.placeholder.com/300/FFFFFF?text=6" class="img-fluid mb-2" alt="white sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                      <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white">
+                        <img src="https://via.placeholder.com/300/FFFFFF?text=7" class="img-fluid mb-2" alt="white sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+                      <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black">
+                        <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="black sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="red sample">
+                      <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=9" data-toggle="lightbox" data-title="sample 9 - red">
+                        <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=9" class="img-fluid mb-2" alt="red sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                      <a href="https://via.placeholder.com/1200/FFFFFF.png?text=10" data-toggle="lightbox" data-title="sample 10 - white">
+                        <img src="https://via.placeholder.com/300/FFFFFF?text=10" class="img-fluid mb-2" alt="white sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                      <a href="https://via.placeholder.com/1200/FFFFFF.png?text=11" data-toggle="lightbox" data-title="sample 11 - white">
+                        <img src="https://via.placeholder.com/300/FFFFFF?text=11" class="img-fluid mb-2" alt="white sample"/>
+                      </a>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="2, 4" data-sort="black sample">
+                      <a href="https://via.placeholder.com/1200/000000.png?text=12" data-toggle="lightbox" data-title="sample 12 - black">
+                        <img src="https://via.placeholder.com/300/000000?text=12" class="img-fluid mb-2" alt="black sample"/>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 33.1%
-                    </span>
-                    <span class="text-muted">Since last month</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
 
-                <div class="position-relative mb-4">
-                  <canvas id="sales-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Online Store Overview</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-success text-xl">
-                    <i class="ion ion-ios-refresh-empty"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-success"></i> 12%
-                    </span>
-                    <span class="text-muted">CONVERSION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-warning text-xl">
-                    <i class="ion ion-ios-cart-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
-                    </span>
-                    <span class="text-muted">SALES RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center mb-0">
-                  <p class="text-danger text-xl">
-                    <i class="ion ion-ios-people-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
-                    </span>
-                    <span class="text-muted">REGISTRATION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
               </div>
             </div>
           </div>
-          <!-- /.col-md-6 -->
+          <div class="col-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title">Ekko Lightbox</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="lightbox" data-title="sample 4 - red" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/000000?text=5" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FFFFFF?text=6" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FFFFFF?text=7" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=9" data-toggle="lightbox" data-title="sample 9 - red" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=9" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=10" data-toggle="lightbox" data-title="sample 10 - white" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FFFFFF?text=10" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=11" data-toggle="lightbox" data-title="sample 11 - white" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/FFFFFF?text=11" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://via.placeholder.com/1200/000000.png?text=12" data-toggle="lightbox" data-title="sample 12 - black" data-gallery="gallery">
+                      <img src="https://via.placeholder.com/300/000000?text=12" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </div>
+      </div><!-- /.container-fluid -->
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
 </div>
 <!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
 <script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.min.js></script>
 <!-- Bootstrap -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/bootstrap.bundle.min.js></script>
-<!-- AdminLTE -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.js></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/Chart.min.js></script>
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/bootstrap.bundle.min.js></script>
+<!-- Ekko Lightbox -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/ekko-lightbox.min.js></script>
+<!-- AdminLTE App -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.min.js></script>
+<!-- Filterizr-->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.filterizr.min.js></script>
 <!-- AdminLTE for demo purposes -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/demo.js></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/dashboard3.js></script>
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/demo.js></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true
+      });
+    });
+
+    $('.filter-container').filterizr({gutterPixels: 3});
+    $('.btn[data-filter]').on('click', function() {
+      $('.btn[data-filter]').removeClass('active');
+      $(this).addClass('active');
+    });
+  })
+</script>
 </body>
 </html>

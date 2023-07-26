@@ -6,26 +6,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>AdminLTE 3 | General Form Elements</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/all.min.css>
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/adminlte.min.css>
 </head>
-<!--
-`body` tag options:
-
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
@@ -176,7 +165,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
+      <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/user2-160x160.jpg class="img-circle elevation-2" alt="User Image">
@@ -203,8 +192,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -225,7 +214,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link active">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -346,57 +335,57 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/general.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/icons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/icons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Icons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/buttons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/buttons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buttons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/sliders.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/sliders.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sliders</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/modals.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/modals.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Modals & Alerts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/navbar.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/navbar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Navbar & Tabs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/timeline.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/timeline.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Timeline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/ribbons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/ribbons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ribbons</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Forms
@@ -405,7 +394,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General Elements</p>
                 </a>
@@ -440,19 +429,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/simple.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/simple.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Tables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/data.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/data.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>DataTables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/jsgrid.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/jsgrid.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
@@ -462,7 +451,7 @@
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
             <a href=<?php echo FILE_COMPONENTS_PATH ?>/calendar.php class="nav-link">
-              <i class="nav-icon fas fa-calendar-alt"></i>
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Calendar
                 <span class="badge badge-info right">2</span>
@@ -844,307 +833,686 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
-          </div><!-- /.col -->
+            <h1>General Form</h1>
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
+              <li class="breadcrumb-item active">General Form</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+    </section>
 
     <!-- Main content -->
-    <div class="content">
+    <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Online Store Visitors</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Quick Example</h3>
               </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">820</span>
-                    <span>Visitors Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 12.5%
-                    </span>
-                    <span class="text-muted">Since last week</span>
-                  </p>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
                 </div>
-                <!-- /.d-flex -->
+                <!-- /.card-body -->
 
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This Week
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last Week
-                  </span>
-                </div>
-              </div>
+              </form>
             </div>
             <!-- /.card -->
 
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Products</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-bars"></i>
-                  </a>
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Different Styles</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <h4>Input</h4>
+                <div class="form-group">
+                  <label for="exampleInputBorder">Bottom Border only <code>.form-control-border</code></label>
+                  <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputBorderWidth2">Bottom Border only 2px Border <code>.form-control-border.border-width-2</code></label>
+                  <input type="text" class="form-control form-control-border border-width-2" id="exampleInputBorderWidth2" placeholder=".form-control-border.border-width-2">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputRounded0">Flat <code>.rounded-0</code></label>
+                  <input type="text" class="form-control rounded-0" id="exampleInputRounded0" placeholder=".rounded-0">
+                </div>
+                <h4>Custom Select</h4>
+                <div class="form-group">
+                  <label for="exampleSelectBorder">Bottom Border only <code>.form-control-border</code></label>
+                  <select class="custom-select form-control-border" id="exampleSelectBorder">
+                    <option>Value 1</option>
+                    <option>Value 2</option>
+                    <option>Value 3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelectBorderWidth2">Bottom Border only <code>.form-control-border.border-width-2</code></label>
+                  <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                    <option>Value 1</option>
+                    <option>Value 2</option>
+                    <option>Value 3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelectRounded0">Flat <code>.rounded-0</code></label>
+                  <select class="custom-select rounded-0" id="exampleSelectRounded0">
+                    <option>Value 1</option>
+                    <option>Value 2</option>
+                    <option>Value 3</option>
+                  </select>
                 </div>
               </div>
-              <div class="card-body table-responsive p-0">
-                <table class="table table-striped table-valign-middle">
-                  <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
-                    </td>
-                    <td>$13 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        12%
-                      </small>
-                      12,000 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
-                    </td>
-                    <td>$29 USD</td>
-                    <td>
-                      <small class="text-warning mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        0.5%
-                      </small>
-                      123,234 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
-                    </td>
-                    <td>$1,230 USD</td>
-                    <td>
-                      <small class="text-danger mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        3%
-                      </small>
-                      198 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
-                    </td>
-                    <td>$199 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        63%
-                      </small>
-                      87 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            <!-- Input addon -->
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Input Addon</h3>
               </div>
+              <div class="card-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control">
+                  <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="text" class="form-control">
+                  <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+
+                <h4>With icons</h4>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-check"></i></span>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-dollar-sign"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control">
+                  <div class="input-group-append">
+                    <div class="input-group-text"><i class="fas fa-ambulance"></i></div>
+                  </div>
+                </div>
+
+                <h5 class="mt-4 mb-2">With checkbox and radio inputs</h5>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <input type="checkbox">
+                        </span>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+                    <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><input type="radio"></span>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+                    <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+                <h5 class="mt-4 mb-2">With buttons</h5>
+
+                <p>Large: <code>.input-group.input-group-lg</code></p>
+
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item"><a href="#">Action</a></li>
+                      <li class="dropdown-item"><a href="#">Another action</a></li>
+                      <li class="dropdown-item"><a href="#">Something else here</a></li>
+                      <li class="dropdown-divider"></li>
+                      <li class="dropdown-item"><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <!-- /btn-group -->
+                  <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+
+                <p>Normal</p>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-danger">Action</button>
+                  </div>
+                  <!-- /btn-group -->
+                  <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+
+                <p>Small <code>.input-group.input-group-sm</code></p>
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control">
+                  <span class="input-group-append">
+                    <button type="button" class="btn btn-info btn-flat">Go!</button>
+                  </span>
+                </div>
+                <!-- /input-group -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <!-- Horizontal Form -->
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Horizontal Form</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form class="form-horizontal">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Remember me</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-info">Sign in</button>
+                  <button type="submit" class="btn btn-default float-right">Cancel</button>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+            <!-- Form Element sizes -->
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Different Height</h3>
+              </div>
+              <div class="card-body">
+                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+                <br>
+                <input class="form-control" type="text" placeholder="Default input">
+                <br>
+                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">Different Width</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <input type="text" class="form-control" placeholder=".col-3">
+                  </div>
+                  <div class="col-4">
+                    <input type="text" class="form-control" placeholder=".col-4">
+                  </div>
+                  <div class="col-5">
+                    <input type="text" class="form-control" placeholder=".col-5">
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            <!-- general form elements disabled -->
+            <div class="card card-warning">
+              <div class="card-header">
+                <h3 class="card-title">General Elements</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Text</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Text Disabled</label>
+                        <input type="text" class="form-control" placeholder="Enter ..." disabled>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- textarea -->
+                      <div class="form-group">
+                        <label>Textarea</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Textarea Disabled</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- input states -->
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Input with
+                      success</label>
+                    <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i> Input with
+                      warning</label>
+                    <input type="text" class="form-control is-warning" id="inputWarning" placeholder="Enter ...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Input with
+                      error</label>
+                    <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- checkbox -->
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Checkbox</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" checked>
+                          <label class="form-check-label">Checkbox checked</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" disabled>
+                          <label class="form-check-label">Checkbox disabled</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radio1">
+                          <label class="form-check-label">Radio</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radio1" checked>
+                          <label class="form-check-label">Radio checked</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" disabled>
+                          <label class="form-check-label">Radio disabled</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>Select</label>
+                        <select class="form-control">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Select Disabled</label>
+                        <select class="form-control" disabled>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Select multiple-->
+                      <div class="form-group">
+                        <label>Select Multiple</label>
+                        <select multiple class="form-control">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Select Multiple Disabled</label>
+                        <select multiple class="form-control" disabled>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <!-- general form elements disabled -->
+            <div class="card card-secondary">
+              <div class="card-header">
+                <h3 class="card-title">Custom Elements</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- checkbox -->
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
+                          <label for="customCheckbox1" class="custom-control-label">Custom Checkbox</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="customCheckbox2" checked>
+                          <label for="customCheckbox2" class="custom-control-label">Custom Checkbox checked</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="customCheckbox3" disabled>
+                          <label for="customCheckbox3" class="custom-control-label">Custom Checkbox disabled</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input custom-control-input-danger" type="checkbox" id="customCheckbox4" checked>
+                          <label for="customCheckbox4" class="custom-control-label">Custom Checkbox with custom color</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input custom-control-input-danger custom-control-input-outline" type="checkbox" id="customCheckbox5" checked>
+                          <label for="customCheckbox5" class="custom-control-label">Custom Checkbox with custom color outline</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <!-- radio -->
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
+                          <label for="customRadio1" class="custom-control-label">Custom Radio</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                          <label for="customRadio2" class="custom-control-label">Custom Radio checked</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio3" disabled>
+                          <label for="customRadio3" class="custom-control-label">Custom Radio disabled</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input custom-control-input-danger" type="radio" id="customRadio4" name="customRadio2" checked>
+                          <label for="customRadio4" class="custom-control-label">Custom Radio with custom color</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input custom-control-input-danger custom-control-input-outline" type="radio" id="customRadio5" name="customRadio2">
+                          <label for="customRadio5" class="custom-control-label">Custom Radio with custom color outline</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>Custom Select</label>
+                        <select class="custom-select">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Custom Select Disabled</label>
+                        <select class="custom-select" disabled>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Select multiple-->
+                      <div class="form-group">
+                        <label>Custom Select Multiple</label>
+                        <select multiple class="custom-select">
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Custom Select Multiple Disabled</label>
+                        <select multiple class="custom-select" disabled>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">Toggle this custom switch element</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">Toggle this custom switch element with custom colors danger/success</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2">Disabled custom switch element</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="customRange1">Custom range</label>
+                    <input type="range" class="custom-range" id="customRange1">
+                  </div>
+                  <div class="form-group">
+                    <label for="customRange2">Custom range (custom-range-danger)</label>
+                    <input type="range" class="custom-range custom-range-danger" id="customRange2">
+                  </div>
+                  <div class="form-group">
+                    <label for="customRange3">Custom range (custom-range-teal)</label>
+                    <input type="range" class="custom-range custom-range-teal" id="customRange3">
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="customFile">Custom File</label> -->
+
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  </div>
+                </form>
+              </div>
+              <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 33.1%
-                    </span>
-                    <span class="text-muted">Since last month</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="sales-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Online Store Overview</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-success text-xl">
-                    <i class="ion ion-ios-refresh-empty"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-success"></i> 12%
-                    </span>
-                    <span class="text-muted">CONVERSION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-warning text-xl">
-                    <i class="ion ion-ios-cart-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
-                    </span>
-                    <span class="text-muted">SALES RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center mb-0">
-                  <p class="text-danger text-xl">
-                    <i class="ion ion-ios-people-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
-                    </span>
-                    <span class="text-muted">REGISTRATION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
+          <!--/.col (right) -->
         </div>
         <!-- /.row -->
-      </div>
-      <!-- /.container-fluid -->
-    </div>
+      </div><!-- /.container-fluid -->
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
-
 <!-- jQuery -->
 <script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.min.js></script>
-<!-- Bootstrap -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/bootstrap.bundle.min.js></script>
-<!-- AdminLTE -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.js></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/Chart.min.js></script>
+<!-- Bootstrap 4 -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/bootstrap.bundle.min.js></script>
+<!-- bs-custom-file-input -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/bs-custom-file-input.min.js></script>
+<!-- AdminLTE App -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.min.js></script>
 <!-- AdminLTE for demo purposes -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/demo.js></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/dashboard3.js></script>
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/demo.js></script>
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
 </body>
 </html>

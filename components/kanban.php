@@ -6,27 +6,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>AdminLTE 3 | Kanban Board</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/all.min.css>
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/ekko-lightbox.css>
   <!-- Theme style -->
   <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/adminlte.min.css>
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href=<?php echo FILE_ASSETS_CSS_ADMIN_PATH ?>/OverlayScrollbars.min.css>
 </head>
-<!--
-`body` tag options:
-
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -203,8 +196,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -225,7 +218,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link active">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/index3.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -346,49 +339,49 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/general.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/general.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/icons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/icons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Icons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/buttons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/buttons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buttons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/sliders.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/sliders.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sliders</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/modals.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/modals.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Modals & Alerts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/navbar.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/navbar.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Navbar & Tabs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/timeline.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/timeline.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Timeline</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/ribbons.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/UI/ribbons.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ribbons</p>
                 </a>
@@ -440,19 +433,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/simple.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/simple.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Tables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/data.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/data.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>DataTables</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=<?php echo FILE_COMPONENTS_PATH ?>/jsgrid.php class="nav-link">
+                <a href=<?php echo FILE_COMPONENTS_PATH ?>/tables/jsgrid.php class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
@@ -462,7 +455,7 @@
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
             <a href=<?php echo FILE_COMPONENTS_PATH ?>/calendar.php class="nav-link">
-              <i class="nav-icon fas fa-calendar-alt"></i>
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Calendar
                 <span class="badge badge-info right">2</span>
@@ -478,7 +471,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href=<?php echo FILE_COMPONENTS_PATH ?>/kanban.php class="nav-link">
+            <a href=<?php echo FILE_COMPONENTS_PATH ?>/kanban.php class="nav-link active">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Kanban Board
@@ -842,309 +835,225 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
+  <div class="content-wrapper kanban">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Online Store Visitors</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">820</span>
-                    <span>Visitors Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 12.5%
-                    </span>
-                    <span class="text-muted">Since last week</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="visitors-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This Week
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last Week
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Products</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body table-responsive p-0">
-                <table class="table table-striped table-valign-middle">
-                  <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
-                    </td>
-                    <td>$13 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        12%
-                      </small>
-                      12,000 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
-                    </td>
-                    <td>$29 USD</td>
-                    <td>
-                      <small class="text-warning mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        0.5%
-                      </small>
-                      123,234 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
-                    </td>
-                    <td>$1,230 USD</td>
-                    <td>
-                      <small class="text-danger mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        3%
-                      </small>
-                      198 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src=<?php echo FILE_ASSETS_IMG_ADMIN_PATH ?>/default-150x150.png alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
-                    </td>
-                    <td>$199 USD</td>
-                    <td>
-                      <small class="text-success mr-1">
-                        <i class="fas fa-arrow-up"></i>
-                        63%
-                      </small>
-                      87 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- /.card -->
+          <div class="col-sm-6">
+            <h1>Kanban Board</h1>
           </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 33.1%
-                    </span>
-                    <span class="text-muted">Since last month</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-
-                <div class="position-relative mb-4">
-                  <canvas id="sales-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <div class="card">
-              <div class="card-header border-0">
-                <h3 class="card-title">Online Store Overview</h3>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-download"></i>
-                  </a>
-                  <a href="#" class="btn btn-sm btn-tool">
-                    <i class="fas fa-bars"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-success text-xl">
-                    <i class="ion ion-ios-refresh-empty"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-success"></i> 12%
-                    </span>
-                    <span class="text-muted">CONVERSION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
-                  <p class="text-warning text-xl">
-                    <i class="ion ion-ios-cart-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
-                    </span>
-                    <span class="text-muted">SALES RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-                <div class="d-flex justify-content-between align-items-center mb-0">
-                  <p class="text-danger text-xl">
-                    <i class="ion ion-ios-people-outline"></i>
-                  </p>
-                  <p class="d-flex flex-column text-right">
-                    <span class="font-weight-bold">
-                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
-                    </span>
-                    <span class="text-muted">REGISTRATION RATE</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
-              </div>
-            </div>
+          <div class="col-sm-6 d-none d-sm-block">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Kanban Board</li>
+            </ol>
           </div>
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container-fluid -->
-    </div>
-    <!-- /.content -->
+    </section>
+
+    <section class="content pb-3">
+      <div class="container-fluid h-100">
+        <div class="card card-row card-secondary">
+          <div class="card-header">
+            <h3 class="card-title">
+              Backlog
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="card card-info card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Labels</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#3</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" disabled>
+                  <label for="customCheckbox1" class="custom-control-label">Bug</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox2" disabled>
+                  <label for="customCheckbox2" class="custom-control-label">Feature</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox3" disabled>
+                  <label for="customCheckbox3" class="custom-control-label">Enhancement</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox4" disabled>
+                  <label for="customCheckbox4" class="custom-control-label">Documentation</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox5" disabled>
+                  <label for="customCheckbox5" class="custom-control-label">Examples</label>
+                </div>
+              </div>
+            </div>
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Issue template</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#4</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_1" disabled>
+                  <label for="customCheckbox1_1" class="custom-control-label">Bug Report</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_2" disabled>
+                  <label for="customCheckbox1_2" class="custom-control-label">Feature Request</label>
+                </div>
+              </div>
+            </div>
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create PR template</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#6</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-row card-primary">
+          <div class="card-header">
+            <h3 class="card-title">
+              To Do
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create first milestone</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#5</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-row card-default">
+          <div class="card-header bg-info">
+            <h3 class="card-title">
+              In Progress
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Update Readme</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#2</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-row card-success">
+          <div class="card-header">
+            <h3 class="card-title">
+              Done
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create repo</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#1</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
 </div>
 <!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
 <script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.min.js></script>
 <!-- Bootstrap -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/bootstrap.bundle.min.js></script>
-<!-- AdminLTE -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.js></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/Chart.min.js></script>
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/bootstrap.bundle.min.js></script>
+<!-- Ekko Lightbox -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/ekko-lightbox.min.js></script>
+<!-- overlayScrollbars -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.overlayScrollbars.min.js></script>
+<!-- AdminLTE App -->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/adminlte.min.js></script>
+<!-- Filterizr-->
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/jquery.filterizr.min.js></script>
 <!-- AdminLTE for demo purposes -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/demo.js></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/dashboard3.js></script>
+<script src=<?php echo FILE_ASSETS_JS_ADMIN_PATH ?>/js/demo.js></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+
+  })
+</script>
 </body>
 </html>
